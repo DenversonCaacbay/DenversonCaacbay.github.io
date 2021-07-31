@@ -624,7 +624,7 @@ button:hover{
   
   .port__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     height: 90%;
@@ -647,7 +647,7 @@ button:hover{
     width: 300px;
     border-radius: 10px;
     float: left;
-    margin-left:80%;
+    margin-left:20%;
 }
 .lalagyan:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

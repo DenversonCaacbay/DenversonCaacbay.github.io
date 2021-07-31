@@ -44,8 +44,8 @@
   }
   .main__content1 h1 {
     font-size: 18px;
-    background-color: #d81a5f;
-    background-image: linear-gradient(to top, #d81a5f 0%, #d81a5f 100%);
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -57,8 +57,8 @@
 
   .main__content h1 {
     font-size: 18px;
-    background-color: #d81a5f;
-    background-image: linear-gradient(to top, #d81a5f 0%, #d81a5f 100%);
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
