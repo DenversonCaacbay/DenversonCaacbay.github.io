@@ -16,6 +16,7 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector('#home-page');
   const aboutMenu = document.querySelector('#about-page');
   const portfolioMenu = document.querySelector('#portfolio-page');
+  const seminarMenu = document.querySelector('#seminar-page');
   const contactMenu = document.querySelector('#contactme-page');
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
@@ -26,6 +27,7 @@ const highlightMenu = () => {
     aboutMenu.classList.remove('highlight');
     portfolioMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
+    seminarMenu.classList.remove('highlight');
 
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
@@ -33,16 +35,18 @@ const highlightMenu = () => {
     homeMenu.classList.remove('highlight');
     portfolioMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
+    seminarMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     portfolioMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
+    seminarMenu.classList.remove('highlight');
     return;
   }
-   else if (window.innerWidth > 960 && scrollPos < 3245) {
-    contactMenu.classList.add('highlight');
+   else if (window.innerWidth > 960 && scrollPos < 3000) {
+    seminarMenu.classList.add('highlight');
     portfolioMenu.classList.remove('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
