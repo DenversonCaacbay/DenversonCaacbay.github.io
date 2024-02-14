@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+i{
+    font-size: 20px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#home{
+    background-image: linear-gradient(rgba(49, 42, 42, 0.2), rgb(147, 22, 22, 0.4)), url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+section{
+    height: 100vh;
+}
+
+/* .logo{
+    position: relative;
+} */
+.header1{
+    padding-top: 5%;
+}
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: -200px; /* Initial position above the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
+  @keyframes slideTop {
+    from {
+      top: -200px; /* Start from above the viewport */
+    }
+    to {
+      top: calc(20% - 100px); /* Center vertically */
+    }
+  }
+  
+  #logo {
+    animation: slideTop 1s ease forwards; /* Apply the animation */
+  }
+
+  .l-pizza {
+    width: 300px;
+    opacity: 0; /* Initially hide the image */
+    animation: slideLeft 1s forwards;
+  }
+  .r-pizza {
+    width: 300px;
+    opacity: 0; /* Initially hide the image */
+    animation: slideRight 1s forwards;
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideRight {
+    from {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+#header2{
+    padding-top: 2%;
+    height: 25vh;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li .active{
+    background: #fff;
+    color: #dc3545;
+  }
+  
+  li {
+    display: inline;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    border: 10px;
+  }
+  li a{
+    text-decoration: none;
+    color:#fff;
+  }
+
+  li a:hover{
+    background: #fff;
+    color: red;
+    margin-right: 0px;
+    border-radius: 10px;
+  }
+
+  .heading{
+    font-size: 40px;
+    color: #dc3545;
+  }
