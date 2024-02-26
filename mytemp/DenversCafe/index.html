@@ -13,7 +13,7 @@
 
 <div id="home">
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light">
             <div class="container-fluid">
               <!-- <a class="navbar-brand d-none d-md-block" href="#">Navbar</a> -->
               <a class="navbar-brand d-md-none" href="#">Denver's Cafe</a>
@@ -41,13 +41,18 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                   </li>
-                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-<!-- ksdsdljaldjlkj -->
+    <!-- ksdsdljaldjlkj -->
     <section>
         <div class="container">
             <p class="container-wel text-light">Welcome To</p>
@@ -76,7 +81,7 @@
         </div>
     </section>
     <div id="menu"></div>
-    <div  class="container-fluid bg-menu">
+    <div class="container-fluid bg-menu">
         <div class="container">
             <div id="menu1"></div>
             <div class="row">
@@ -90,7 +95,7 @@
                     <div class="card">
                         <h4 class="item-header">CAPPUCINO</h4>
                         <h5 class="item-price">Small - $4.80 Regular - $5.70 Large - $6.70</h5>
-                        <h5 class="item-desc">Silky Frothed Milk Poured Over A Shot Of Espresso, Topped With Foam And A Dusting Of Chocolate.asdsdsdasdasdsaasddasdasdasdasdsasasad</h5>
+                        <h5 class="item-desc">Silky Frothed Milk Poured Over A Shot Of Espresso, Topped With Foam And A Dusting Of Chocolate.</h5>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -382,6 +387,81 @@
         </div>
     </div>
 
+
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Select Street</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option disabled selected>Open this to select Purok</option>
+                    <option value="purok1">Purok 1</option>
+                    <option value="purok2">Purok 2</option>
+                    <option value="purok3">Purok 3</option>
+                    <option value="purok4">Purok 4</option>
+                    <option value="purok5">Purok 5</option>
+                    <option value="purok6">Purok 6</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
 
 
